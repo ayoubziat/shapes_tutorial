@@ -3,7 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/Shapes/Shapes.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/Shapes/sandbox/Shapes.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ShapesSolution/ShapesSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>

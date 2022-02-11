@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Shapes.sandbox" uuid="2968a93d-7afe-4618-86e0-bf8532bc01be" moduleVersion="0" compileInMPS="true">
+<solution name="ShapesSolution" uuid="c9b3b1d1-4212-4b51-8ab6-c0434fd6c2b5" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -16,7 +16,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="2968a93d-7afe-4618-86e0-bf8532bc01be(Shapes.sandbox)" version="0" />
+    <module reference="c9b3b1d1-4212-4b51-8ab6-c0434fd6c2b5(ShapesSolution)" version="0" />
   </dependencyVersions>
 </solution>
 
