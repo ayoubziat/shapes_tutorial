@@ -1,0 +1,7 @@
+.DS_Store
+.log
+
+# MPS languages and solutions generated files
+classes_gen
+source_gen
+source_gen.caches
