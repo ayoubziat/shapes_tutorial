@@ -149,5 +149,12 @@
       <ref role="20lvS9" node="220K5nvePPM" resolve="Color" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7VIRfrZoh6U">
+    <property role="EcuMT" value="9146490846640673210" />
+    <property role="3GE5qa" value="shapes" />
+    <property role="TrG5h" value="Line" />
+    <property role="34LRSv" value="line" />
+    <ref role="1TJDcQ" node="220K5nveEmE" resolve="AbstractShape" />
+  </node>
 </model>
 
