@@ -22,7 +22,7 @@
         <property id="2342083281282573744" name="x" index="3ZIAn_" />
         <property id="2342083281282573746" name="y" index="3ZIAnB" />
       </concept>
-      <concept id="2342083281282573738" name="Shapes.structure.Shape" flags="ng" index="3ZIAnZ">
+      <concept id="2342083281282573738" name="Shapes.structure.AbstractShape" flags="ng" index="3ZIAnZ">
         <child id="2342083281282670887" name="color" index="3ZJe5M" />
       </concept>
       <concept id="2342083281282670795" name="Shapes.structure.ColorReference" flags="ng" index="3ZJe2u">
@@ -42,7 +42,7 @@
       <property role="3ZIAnB" value="20" />
       <property role="3ZIAnw" value="30" />
       <node concept="3ZJe2u" id="220K5nvfaIQ" role="3ZJe5M">
-        <ref role="3ZJe2p" to="8ebf:220K5nvfaIY" resolve="blue" />
+        <ref role="3ZJe2p" to="8ebf:220K5nvfaJ0" resolve="red" />
       </node>
     </node>
     <node concept="3ZIAmk" id="220K5nveEQp" role="3ZIAmr">

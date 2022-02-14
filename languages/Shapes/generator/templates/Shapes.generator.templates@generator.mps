@@ -25,6 +25,7 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -286,18 +287,18 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="7VIRfrZniAM" role="3lj3bC">
       <ref role="30HIoZ" to="h0ue:220K5nveEnb" resolve="Canvas" />
-      <ref role="3lhOvi" node="7VIRfrZnn42" resolve="map_Canvas" />
+      <ref role="3lhOvi" node="7VIRfrZiDAu" resolve="map_Canvas_java" />
     </node>
     <node concept="3aamgX" id="7VIRfrZl3TK" role="3acgRq">
       <ref role="30HIoZ" to="h0ue:220K5nveEmJ" resolve="Circle" />
       <node concept="j$656" id="7VIRfrZl3VX" role="1lVwrX">
-        <ref role="v9R2y" node="7VIRfrZnqmM" resolve="reduce_Circle_xml" />
+        <ref role="v9R2y" node="7VIRfrZl3VV" resolve="reduce_Circle_java" />
       </node>
     </node>
     <node concept="3aamgX" id="7VIRfrZl3Wr" role="3acgRq">
       <ref role="30HIoZ" to="h0ue:220K5nveEn1" resolve="Square" />
       <node concept="j$656" id="7VIRfrZl3Xp" role="1lVwrX">
-        <ref role="v9R2y" node="7VIRfrZnsmh" resolve="reduce_Square_xml" />
+        <ref role="v9R2y" node="7VIRfrZl3Xn" resolve="reduce_Square_java" />
       </node>
     </node>
     <node concept="2rT7sh" id="7VIRfrZlUYF" role="2rTMjI">
@@ -383,6 +384,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6EDWhyd4bui" role="jymVt" />
     <node concept="3clFb_" id="7VIRfrZjgED" role="jymVt">
       <property role="TrG5h" value="initialize" />
       <node concept="3cqZAl" id="7VIRfrZjgEF" role="3clF45" />
