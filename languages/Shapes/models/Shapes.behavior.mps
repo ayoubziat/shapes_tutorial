@@ -36,6 +36,10 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
@@ -83,6 +87,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -200,7 +205,19 @@
   <node concept="13h7C7" id="6EDWhyd20DA">
     <ref role="13h7C2" to="h0ue:220K5nveEnb" resolve="Canvas" />
     <node concept="13hLZK" id="6EDWhyd20DB" role="13h7CW">
-      <node concept="3clFbS" id="6EDWhyd20DC" role="2VODD2" />
+      <node concept="3clFbS" id="6EDWhyd20DC" role="2VODD2">
+        <node concept="3clFbF" id="7kSZ2yZQtZl" role="3cqZAp">
+          <node concept="37vLTI" id="7kSZ2yZQuQS" role="3clFbG">
+            <node concept="10Nm6u" id="7kSZ2yZQuRk" role="37vLTx" />
+            <node concept="2OqwBi" id="7kSZ2yZQu7Z" role="37vLTJ">
+              <node concept="13iPFW" id="7kSZ2yZQtZk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7kSZ2yZQup1" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6EDWhyd20DL" role="13h7CS">
       <property role="TrG5h" value="interpreter" />
@@ -399,7 +416,19 @@
     <property role="3GE5qa" value="shapes" />
     <ref role="13h7C2" to="h0ue:220K5nveEmE" resolve="AbstractShape" />
     <node concept="13hLZK" id="6EDWhyd2_XQ" role="13h7CW">
-      <node concept="3clFbS" id="6EDWhyd2_XR" role="2VODD2" />
+      <node concept="3clFbS" id="6EDWhyd2_XR" role="2VODD2">
+        <node concept="3clFbF" id="7kSZ2yZKHQv" role="3cqZAp">
+          <node concept="37vLTI" id="7kSZ2yZKIjq" role="3clFbG">
+            <node concept="10Nm6u" id="7kSZ2yZKIjW" role="37vLTx" />
+            <node concept="2OqwBi" id="7kSZ2yZKHXP" role="37vLTJ">
+              <node concept="13iPFW" id="7kSZ2yZKHQu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7kSZ2yZKI66" role="2OqNvi">
+                <ref role="3Tt5mk" to="h0ue:220K5nvf24B" resolve="color" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6EDWhyd2A1B" role="13h7CS">
       <property role="TrG5h" value="drawShape" />
@@ -440,17 +469,12 @@
           <node concept="3cpWsn" id="6EDWhyd2Ttn" role="3cpWs9">
             <property role="TrG5h" value="shape_color" />
             <node concept="3Tqbb2" id="6EDWhyd2Ttj" role="1tU5fm">
-              <ref role="ehGHo" to="h0ue:220K5nvePPM" resolve="Color" />
+              <ref role="ehGHo" to="h0ue:220K5nvf23b" resolve="ColorReference" />
             </node>
-            <node concept="2OqwBi" id="6EDWhyd2V3O" role="33vP2m">
-              <node concept="2OqwBi" id="6EDWhyd2TDM" role="2Oq$k0">
-                <node concept="13iPFW" id="6EDWhyd2Twh" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6EDWhyd2URh" role="2OqNvi">
-                  <ref role="3Tt5mk" to="h0ue:220K5nvf24B" resolve="color" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="6EDWhyd2VnQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="h0ue:220K5nvf23c" resolve="target" />
+            <node concept="2OqwBi" id="6EDWhyd2TDM" role="33vP2m">
+              <node concept="13iPFW" id="6EDWhyd2Twh" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6EDWhyd2URh" role="2OqNvi">
+                <ref role="3Tt5mk" to="h0ue:220K5nvf24B" resolve="color" />
               </node>
             </node>
           </node>
@@ -500,11 +524,16 @@
                     <node concept="liA8E" id="1Os2kBLuw0l" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~Class.getField(java.lang.String)" resolve="getField" />
                       <node concept="2OqwBi" id="1Os2kBLuwt4" role="37wK5m">
-                        <node concept="37vLTw" id="1Os2kBLuw6Y" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6EDWhyd2Ttn" resolve="color" />
-                        </node>
                         <node concept="3TrcHB" id="1Os2kBLux53" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                        <node concept="2OqwBi" id="7kSZ2yZKIN1" role="2Oq$k0">
+                          <node concept="37vLTw" id="1Os2kBLuw6Y" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6EDWhyd2Ttn" resolve="shape_color" />
+                          </node>
+                          <node concept="3TrEf2" id="7kSZ2yZKJ9b" role="2OqNvi">
+                            <ref role="3Tt5mk" to="h0ue:220K5nvf23c" resolve="target" />
+                          </node>
                         </node>
                       </node>
                     </node>

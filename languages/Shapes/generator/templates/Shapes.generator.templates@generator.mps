@@ -302,7 +302,7 @@
       </node>
     </node>
     <node concept="2rT7sh" id="7VIRfrZlUYF" role="2rTMjI">
-      <property role="TrG5h" value="graphicParam" />
+      <property role="TrG5h" value="graphicParameter" />
       <ref role="2rTdP9" to="h0ue:220K5nveEnb" resolve="Canvas" />
       <ref role="2rZz_L" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
     </node>

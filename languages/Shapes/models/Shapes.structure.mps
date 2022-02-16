@@ -58,7 +58,6 @@
       <property role="IQ2ns" value="2342083281282670887" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="220K5nvf23b" resolve="ColorReference" />
     </node>
   </node>
